@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\servicesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('sam',[servicesController::class,'index']);
